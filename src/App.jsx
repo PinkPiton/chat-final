@@ -11,50 +11,7 @@ import {
 } from "@nextui-org/react";
 
 function App() {
-  let users = [
-    {
-      id: "1",
-      name: "Illarion",
-      age: 10,
-    },
-
-    {
-      id: "2",
-      name: "Israfil",
-      age: 8,
-    },
-
-    {
-      id: "3",
-      name: "Aslan",
-      age: 1,
-    },
-
-    {
-      id: "4",
-      name: "Alina",
-      age: 14,
-      hobbies: ["Footbal", "Games", "Walking", "Reading"],
-    },
-  ];
-  localStorage.setItem("users", JSON.stringify(users));
-  const localStorageUsersJSON = localStorage.getItem("users");
-  const localStorageUsersJS = JSON.parse(localStorageUsersJSON);
-
-  return (
-    <div>
-      {localStorageUsersJS.map((element) => (
-        <div style={{ margin: "2rem" }}>
-          <div>
-            <span>name={element.name} </span>
-          </div>
-          <div>
-            <span>age={element.age}</span>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
+  return <div></div>;
 }
 
 const UserCard = ({ name, age, ...props }) => (

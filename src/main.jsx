@@ -6,7 +6,9 @@ import { NextUIProvider } from "@nextui-org/react";
 import "./output.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
+  <NextUIProvider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </NextUIProvider>
 );
